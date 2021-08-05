@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  
+  simple_task:
+
+
+          build: .
+
+          image: simple_flask
+          ports:
+            - "5000:5000"
+
+          container_name: simple_flask_container
+          network_mode: "host"
+          logging:
+            driver: local
+
+  test_simle_task:
+           
+           build:
+                   context: /home/renatdevetyarov/PycharmProjects/tests_for_simle_flask
+                   dockerfile: /home/renatdevetyarov/PycharmProjects/tests_for_simle_flask/Dockerfile
+           image: test_simle_task
+           container_name: test_simple_task_container
+           network_mode: "host"
