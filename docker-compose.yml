@@ -19,8 +19,8 @@ services:
   test_simle_task:
            
            build:
-                   context: /home/renatdevetyarov/PycharmProjects/tests_for_simle_flask
-                   dockerfile: /home/renatdevetyarov/PycharmProjects/tests_for_simle_flask/Dockerfile
+                   context: path_to_tests
+                   dockerfile: path_to_dockerfile_tests
            image: test_simle_task
            container_name: test_simple_task_container
            network_mode: "host"
