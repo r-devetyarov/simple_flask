@@ -13,5 +13,8 @@ def index():
 @app.route('/hello', methods=["GET"])
 def hello():
     if request.method == "GET":
-        abort(401)
-        return "Hello"
+        return "<H1>Hello<H1>"
+
+
+if __name__ == '__main__':
+    app.run()
